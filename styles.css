@@ -1,0 +1,35 @@
+.landing {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f1f3df;
+}
+
+.projects {
+  background-color: #757957;
+  width: 100vw;
+  height: 100vh;
+}
+
+.training {
+  background-color: #757957;
+  width: 100vw;
+  height: 100vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.hide {
+  display: none;
+}

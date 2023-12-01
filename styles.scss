@@ -1,0 +1,23 @@
+@use "./modules/landing";
+@use "./modules/projects";
+@use "./modules/training";
+
+// remove margins/padding and hide scrollbar
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+// Temporary hiding of classes while im writing
+.hide {
+  display: none;
+}
