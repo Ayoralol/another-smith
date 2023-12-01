@@ -35,9 +35,9 @@
 - "Also a", Qualified Chef (TAFE NSW), Accountant (ONLINE ACCREDIT) and dad (Me and Link from behind)
 - Add specific little easter eggs for each code type - eg..
 - Have a `<html>` opening tag that displays a `</html>` tag when hovered.
-- have a `css {}` that expands down to `css:hover {color: $secondary-color;}`
+- have a `css {}` that expands down to `css:hover {color: $secondary-color;}` and changes color
 - have a `scss {}` that goes to like `@use "./partials/palette.scss" -> scss:hover {color: $main-text;}`
-- have a `function on-button-press() {showThis.innerHTML = textDisplay;}`
+- have a `function onButtonPress() {showThis.innerHTML = textDisplay;}`
 
 ### Page 4 - Get in touch
 
