@@ -4,4 +4,31 @@
   width: 100vw;
   height: 100vh;
   background-color: palette.$main-background;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__text {
+    margin-bottom: 25vh;
+    margin-left: 5vw;
+    &__head {
+      font-size: 52px;
+    }
+    &__title {
+      padding: 20px 0 15px 0;
+      font-size: 35px;
+      font-weight: 500;
+      font-style: italic;
+    }
+    &__text {
+      font-size: 22px;
+    }
+  }
+  &__image {
+    margin-bottom: 25vh;
+    &--mods {
+      border-radius: 50px;
+      width: 250px;
+      box-shadow: 0 0 10px black;
+    }
+  }
 }

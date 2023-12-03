@@ -2,6 +2,33 @@
   width: 100vw;
   height: 100vh;
   background-color: #f1f3df;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.landing__text {
+  margin-bottom: 25vh;
+  margin-left: 5vw;
+}
+.landing__text__head {
+  font-size: 52px;
+}
+.landing__text__title {
+  padding: 20px 0 15px 0;
+  font-size: 35px;
+  font-weight: 500;
+  font-style: italic;
+}
+.landing__text__text {
+  font-size: 22px;
+}
+.landing__image {
+  margin-bottom: 25vh;
+}
+.landing__image--mods {
+  border-radius: 50px;
+  width: 250px;
+  box-shadow: 0 0 10px black;
 }
 
 .projects {
@@ -16,9 +43,38 @@
   height: 100vh;
 }
 
+.nav {
+  width: 100vw;
+  position: fixed;
+}
+.nav__logo {
+  display: inline;
+  padding: 16px 0 0 6vw;
+}
+.nav__dropdown {
+  float: right;
+  padding: 16px 6vw 0 0;
+}
+.nav__buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  width: 30px;
+  height: 150px;
+  margin: 30vh 0 40vh 75px;
+  border-radius: 20px;
+  background-color: #faedcd;
+}
+.nav__buttons__btn {
+  margin: 5px;
+}
+
 * {
   margin: 0;
   padding: 0;
+  font-family: "Rubik", sans-serif;
 }
 
 body {

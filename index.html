@@ -3,37 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles.css" />
     <title>Another Smith</title>
   </head>
   <body>
     <!-- nav is first because it is seperate to the moving page -->
-    <nav class="nav hide">
-      <img src="./images/Untitled.svg" alt="Nav Dropdown" />
+    <nav class="nav">
+      <div class="nav__logo">
+        <img src="./images/rcsmth.svg" alt="LOGO" />
+      </div>
       <div class="nav__dropdown">
+        <img src="./images/nav.svg" alt="Nav Dropdown" />
         <!-- contains the whole nav dropdown -->
       </div>
       <div class="nav__buttons">
-        <!-- add images/circles that change when clicked -->
+        <img src="./images/circle.svg" class="nav__buttons__btn" />
+        <img src="./images/arrowdown.svg" class="nav__buttons__btn" />
+        <img src="./images/arrowdown.svg" class="nav__buttons__btn" />
+        <img src="./images/arrowdown.svg" class="nav__buttons__btn" />
       </div>
     </nav>
-    <section class="landing hide">
-      <div class="landing__logo">
-        <img src="https://placekitten.com/200/100" alt="LOGO" />
-      </div>
-      <div class="landing__text">
-        <h1 class="landing__text__head">Hi, I'm Reece</h1>
-        <h3 class="landing__text__title">Junior Full-Stack Developer</h3>
-        <p class="landing__text__para">
-          Writing code that is functional and makes sense (to me)
-        </p>
-      </div>
+    <section class="landing">
       <div class="landing__image">
         <img
-          src="https://placekitten.com/400/400"
+          src="./images/selfie.jpg"
           alt="Reece Smith"
           class="landing__image--mods"
         />
+      </div>
+      <div class="landing__text">
+        <p class="landing__text__head">Hi, I'm Reece</p>
+        <p class="landing__text__title">Junior Full-Stack Developer</p>
+        <p class="landing__text__text">
+          Writing code that is functional and makes sense (to me)
+        </p>
       </div>
     </section>
     <section class="projects hide">
@@ -65,7 +74,7 @@
         </div>
       </div>
     </section>
-    <section class="training">
+    <section class="training hide">
       <h2 class="training__head">I am trained in</h2>
       <div class="training__container">
         <div class="training__container__cards">
