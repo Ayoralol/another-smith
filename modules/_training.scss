@@ -1,7 +1,28 @@
 @use "../partials/palette";
+@use "../mixins/mixins";
 
 .training {
-  background-color: palette.$darker-background;
+  background: palette.$darker-background;
   width: 100vw;
   height: 100vh;
+  @include mixins.standard-flex;
+  flex-direction: column;
+  justify-content: space-around;
+  &__head {
+    border: 2px solid red;
+    font-size: 58px;
+  }
+  &__top-container {
+    border: 2px solid red;
+    width: 1000px;
+    @include mixins.standard-flex;
+  }
+  &__bot-container {
+    border: 2px solid red;
+    width: 95vw;
+    @include mixins.standard-flex;
+  }
+  &__other {
+    @include mixins.standard-flex;
+  }
 }
