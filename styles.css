@@ -80,29 +80,71 @@
   align-items: center;
   flex-direction: column;
   justify-content: space-around;
+  text-align: center;
 }
 .training__head {
   border: 2px solid red;
   font-size: 58px;
+  margin-top: 50px;
 }
 .training__top-container {
   border: 2px solid red;
-  width: 1000px;
+  width: 50vw;
   display: flex;
   justify-content: center;
   align-items: center;
+  align-items: flex-start;
+  justify-content: space-around;
+  margin-bottom: 100px;
+  height: 200px;
+}
+.training__top {
+  padding-top: 20px;
+  width: 25%;
+  font-family: "Roboto Mono", monospace;
+  font-size: 20px;
+}
+.training__cards {
+  padding-top: 20px;
 }
 .training__bot-container {
   border: 2px solid red;
-  width: 95vw;
+  width: 80vw;
   display: flex;
   justify-content: center;
   align-items: center;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+.training__bot-container .training__cards {
+  width: 150px;
 }
 .training__other {
+  border: 2px solid red;
   display: flex;
   justify-content: center;
   align-items: center;
+  justify-content: space-around;
+  height: 180px;
+  width: 60vw;
+  margin-bottom: 100px;
+}
+.training__other__head {
+  align-self: flex-start;
+  font-size: 35px;
+  margin-top: 20px;
+}
+.training__other__container {
+  padding: 0 20px;
+  align-self: flex-start;
+  margin-top: 20px;
+}
+.training__other__container--dad {
+  align-self: flex-end;
+}
+
+.cards--html:hover {
+  color: white;
 }
 
 .nav {
