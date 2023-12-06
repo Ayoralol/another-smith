@@ -1,5 +1,9 @@
 # another-smith
 
+## NOTES
+
+- Change colors to text colors + slight gradients on the pages
+
 ## Page layout/goals
 
 - Single page, simplistic

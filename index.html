@@ -3,38 +3,55 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles.css" />
     <title>Another Smith</title>
   </head>
   <body>
     <!-- nav is first because it is seperate to the moving page -->
-    <nav class="nav hide">
-      <img src="./images/Untitled.svg" alt="Nav Dropdown" />
+    <nav class="nav">
+      <div class="nav__logo">
+        <img src="./images/rcsmth.svg" alt="LOGO" />
+      </div>
       <div class="nav__dropdown">
+        <img src="./images/nav.svg" alt="Nav Dropdown" />
         <!-- contains the whole nav dropdown -->
       </div>
       <div class="nav__buttons">
-        <!-- add images/circles that change when clicked -->
+        <img src="./images/circle.svg" class="nav__buttons__btn" />
+        <img src="./images/arrowdown.svg" class="nav__buttons__btn" />
+        <img src="./images/arrowdown.svg" class="nav__buttons__btn" />
+        <img src="./images/arrowdown.svg" class="nav__buttons__btn" />
       </div>
     </nav>
     <section class="landing hide">
-      <div class="landing__logo">
-        <img src="https://placekitten.com/200/100" alt="LOGO" />
-      </div>
-      <div class="landing__text">
-        <h1 class="landing__text__head">Hi, I'm Reece</h1>
-        <h3 class="landing__text__title">Junior Full-Stack Developer</h3>
-        <p class="landing__text__para">
-          Writing code that is functional and makes sense (to me)
-        </p>
-      </div>
       <div class="landing__image">
         <img
-          src="https://placekitten.com/400/400"
+          src="./images/selfie.jpg"
           alt="Reece Smith"
           class="landing__image--mods"
         />
       </div>
+      <div class="landing__text">
+        <p class="landing__text__head">Hi, I'm Reece</p>
+        <p class="landing__text__title">Junior Full-Stack Developer</p>
+        <p class="landing__text__text">
+          Writing code that is functional and makes sense (to me)
+        </p>
+      </div>
+      <div class="break"></div>
+      <div class="landing__wave"></div>
     </section>
     <section class="projects hide">
       <h2 class="projects__head">Things I've worked on</h2>
@@ -67,116 +84,105 @@
     </section>
     <section class="training">
       <h2 class="training__head">I am trained in</h2>
-      <div class="training__container">
-        <div class="training__container__cards">
-          <img
-            src="https://placekitten.com/50/50"
-            alt=""
-            class="training__container__cards__image"
-          />
-          <p class="training__container__cards__para">HTML</p>
+      <div class="training__top-container">
+        <div class="training__top">
+          <p class="training__top__para cards--html">&#8249;HTML&#8250;</p>
         </div>
-        <div class="training__container__cards">
-          <img
-            src="https://placekitten.com/50/50"
-            alt=""
-            class="training__container__cards__image"
-          />
-          <p class="training__container__cards__para">CSS</p>
+        <div class="training__top">
+          <p class="training__top__para cards--css">.CSS{}</p>
         </div>
-        <div class="training__container__cards">
-          <img
-            src="https://placekitten.com/50/50"
-            alt=""
-            class="training__container__cards__image"
-          />
-          <p class="training__container__cards__para">SCSS</p>
+        <div class="training__top">
+          <p class="training__top__para cards--scss">.SCSS{}</p>
         </div>
-        <div class="training__container__cards">
-          <img
-            src="https://placekitten.com/50/50"
-            alt=""
-            class="training__container__cards__image"
-          />
-          <p class="training__container__cards__para">Javascript</p>
+        <div class="training__top">
+          <p class="training__top__para cards--js">Javascript</p>
+          <div class="training__top--js-btn"></div>
         </div>
-        <div class="training__container__cards">
+      </div>
+      <div class="training__bot-container">
+        <div class="training__cards">
           <img
             src="https://placekitten.com/50/50"
             alt=""
-            class="training__container__cards__image"
+            class="training__cards__image"
           />
-          <p class="training__container__cards__para">git</p>
+          <p class="training__cards__para">git</p>
         </div>
-        <div class="training__container__cards">
+        <div class="training__cards">
           <img
             src="https://placekitten.com/50/50"
             alt=""
-            class="training__container__cards__image"
+            class="training__cards__image"
           />
-          <p class="training__container__cards__para">Java</p>
+          <p class="training__cards__para">Java</p>
         </div>
-        <div class="training__container__cards">
+        <div class="training__cards">
           <img
             src="https://placekitten.com/50/50"
             alt=""
-            class="training__container__cards__image"
+            class="training__cards__image"
           />
-          <p class="training__container__cards__para">ReactJS</p>
+          <p class="training__cards__para">ReactJS</p>
         </div>
-        <div class="training__container__cards">
+        <div class="training__cards">
           <img
             src="https://placekitten.com/50/50"
             alt=""
-            class="training__container__cards__image"
+            class="training__cards__image"
           />
-          <p class="training__container__cards__para">AWS</p>
+          <p class="training__cards__para">AWS</p>
         </div>
-        <div class="training__container__cards">
+        <div class="training__cards">
           <img
             src="https://placekitten.com/50/50"
             alt=""
-            class="training__container__cards__image"
+            class="training__cards__image"
           />
-          <p class="training__container__cards__para">SQL</p>
+          <p class="training__cards__para">SQL</p>
         </div>
-        <div class="training__container__cards">
+        <div class="training__cards">
           <img
             src="https://placekitten.com/50/50"
             alt=""
-            class="training__container__cards__image"
+            class="training__cards__image"
           />
-          <p class="training__container__cards__para">Springboot</p>
+          <p class="training__cards__para">Springboot</p>
         </div>
-        <div class="training__container__cards">
+        <div class="training__cards">
           <img
             src="https://placekitten.com/50/50"
             alt=""
-            class="training__container__cards__image"
+            class="training__cards__image"
           />
-          <p class="training__container__cards__para">Firebase & Firestone</p>
+          <p class="training__cards__para">Firebase & Firestone</p>
         </div>
       </div>
       <div class="training__other">
-        <h4 class="training__other__head">Also a</h4>
-        <p class="training__other__para">Qualified Chef</p>
-        <img
-          src="https://placekitten.com/40/40"
-          alt=""
-          class="training__other__image"
-        />
-        <p class="training__other__para">Qualified Accountant</p>
-        <img
-          src="https://placekitten.com/40/40"
-          alt=""
-          class="training__other__image"
-        />
-        <p class="training__other__para">"Qualified" Dad</p>
-        <img
-          src="https://placekitten.com/100/100"
-          alt=""
-          class="training__other__image"
-        />
+        <h4 class="training__other__head">I am also a</h4>
+        <div class="training__other__container">
+          <p class="training__other__para">Qualified Chef</p>
+          <img
+            src="https://placekitten.com/60/60"
+            alt=""
+            class="training__other__image"
+          />
+        </div>
+        <div class="training__other__container training__other__container--dad">
+          <p class="training__other__para">"Qualified" Dad</p>
+          <img
+            src="https://placekitten.com/100/100"
+            alt=""
+            class="training__other__image"
+          />
+        </div>
+        <div class="training__other__container">
+          <p class="training__other__para">Qualified Accountant</p>
+          <img
+            src="https://placekitten.com/60/60"
+            alt=""
+            class="training__other__image"
+          />
+        </div>
       </div>
     </section>
   </body>

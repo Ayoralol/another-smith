@@ -1,0 +1,29 @@
+@use "../partials/palette";
+
+.nav {
+  width: 100vw;
+  position: fixed;
+  &__logo {
+    display: inline;
+    padding: 16px 0 0 6vw;
+  }
+  &__dropdown {
+    float: right;
+    padding: 16px 6vw 0 0;
+  }
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    width: 30px;
+    height: 150px;
+    margin: 30vh 0 40vh 75px;
+    border-radius: 20px;
+    background-color: palette.$accent-color;
+    &__btn {
+      margin: 5px;
+    }
+  }
+}

@@ -1,24 +1,184 @@
 .landing {
   width: 100vw;
   height: 100vh;
-  background-color: #f1f3df;
+  background: rgb(222, 223, 224);
+  background: linear-gradient(211deg, rgb(222, 223, 224) 20%, rgb(245, 245, 245) 79%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.landing__text {
+  margin-top: 10vh;
+  margin-left: 5vw;
+}
+.landing__text__head {
+  font-size: 52px;
+}
+.landing__text__title {
+  padding: 20px 0 15px 0;
+  font-size: 35px;
+  font-weight: 500;
+  font-style: italic;
+}
+.landing__text__text {
+  font-size: 22px;
+}
+.landing__image {
+  margin-top: 10vh;
+  margin-left: 15vw;
+}
+.landing__image--mods {
+  border-radius: 50px;
+  width: 250px;
+  box-shadow: 0 0 10px grey;
+}
+.landing__wave {
+  width: 50vw;
+  height: 200px;
+  border: 2px solid red;
+  margin-bottom: 10vh;
+}
+
+.break {
+  flex-basis: 100%;
+  height: 0;
 }
 
 .projects {
-  background-color: #757957;
+  background: rgb(230, 230, 230);
+  background: linear-gradient(180deg, rgb(186, 186, 186) 20%, rgb(230, 230, 230) 85%);
   width: 100vw;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.projects__head {
+  font-size: 58px;
+  margin-bottom: 50px;
+}
+.projects__container {
+  width: 1000px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid red;
+}
+.projects__container__cards {
+  padding: 40px;
 }
 
 .training {
-  background-color: #757957;
+  background: rgb(230, 230, 230);
   width: 100vw;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+}
+.training__head {
+  border: 2px solid red;
+  font-size: 58px;
+  margin-top: 50px;
+}
+.training__top-container {
+  border: 2px solid red;
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+  justify-content: space-around;
+  margin-bottom: 100px;
+  height: 200px;
+}
+.training__top {
+  padding-top: 20px;
+  width: 25%;
+  font-family: "Roboto Mono", monospace;
+  font-size: 20px;
+}
+.training__cards {
+  padding-top: 20px;
+}
+.training__bot-container {
+  border: 2px solid red;
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+.training__bot-container .training__cards {
+  width: 150px;
+}
+.training__other {
+  border: 2px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  height: 180px;
+  width: 60vw;
+  margin-bottom: 100px;
+}
+.training__other__head {
+  align-self: flex-start;
+  font-size: 35px;
+  margin-top: 20px;
+}
+.training__other__container {
+  padding: 0 20px;
+  align-self: flex-start;
+  margin-top: 20px;
+}
+.training__other__container--dad {
+  align-self: flex-end;
+}
+
+.cards--html:hover {
+  color: white;
+}
+
+.nav {
+  width: 100vw;
+  position: fixed;
+}
+.nav__logo {
+  display: inline;
+  padding: 16px 0 0 6vw;
+}
+.nav__dropdown {
+  float: right;
+  padding: 16px 6vw 0 0;
+}
+.nav__buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  width: 30px;
+  height: 150px;
+  margin: 30vh 0 40vh 75px;
+  border-radius: 20px;
+  background-color: #faedcd;
+}
+.nav__buttons__btn {
+  margin: 5px;
 }
 
 * {
   margin: 0;
   padding: 0;
+  font-family: "Rubik", sans-serif;
 }
 
 body {

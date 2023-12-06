@@ -1,7 +1,24 @@
 @use "../partials/palette";
+@use "../mixins/mixins";
 
 .projects {
-  background-color: palette.$darker-background;
+  background: palette.$darker-background;
+  background: palette.$darker-background-gradient;
   width: 100vw;
   height: 100vh;
+  @include mixins.standard-flex;
+  flex-direction: column;
+  &__head {
+    font-size: 58px;
+    margin-bottom: 50px;
+  }
+  &__container {
+    width: 1000px;
+    height: 500px;
+    @include mixins.standard-flex;
+    border: 2px solid red;
+    &__cards {
+      padding: 40px;
+    }
+  }
 }

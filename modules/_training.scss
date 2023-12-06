@@ -1,7 +1,70 @@
 @use "../partials/palette";
+@use "../mixins/mixins";
 
 .training {
-  background-color: palette.$darker-background;
+  background: palette.$darker-background;
   width: 100vw;
   height: 100vh;
+  @include mixins.standard-flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  &__head {
+    border: 2px solid red;
+    font-size: 58px;
+    margin-top: 50px;
+  }
+  &__top-container {
+    border: 2px solid red;
+    width: 50vw;
+    @include mixins.standard-flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-bottom: 100px;
+    height: 200px;
+  }
+  &__top {
+    padding-top: 20px;
+    width: 25%;
+    font-family: "Roboto Mono", monospace;
+    font-size: 20px;
+  }
+  &__cards {
+    padding-top: 20px;
+  }
+  &__bot-container {
+    border: 2px solid red;
+    width: 80vw;
+    @include mixins.standard-flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    .training__cards {
+      width: 150px;
+    }
+  }
+  &__other {
+    border: 2px solid red;
+    @include mixins.standard-flex;
+    justify-content: space-around;
+    height: 180px;
+    width: 60vw;
+    margin-bottom: 100px;
+    &__head {
+      align-self: flex-start;
+      font-size: 35px;
+      margin-top: 20px;
+    }
+    &__container {
+      padding: 0 20px;
+      align-self: flex-start;
+      margin-top: 20px;
+      &--dad {
+        align-self: flex-end;
+      }
+    }
+  }
+}
+
+.cards--html:hover {
+  color: white;
 }
