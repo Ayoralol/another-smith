@@ -16,9 +16,34 @@
     width: 1000px;
     height: 500px;
     @include mixins.standard-flex;
-    border: 2px solid red;
+    // border: 2px solid red;
     &__cards {
+      // border: 2px solid red;
       padding: 40px;
+      z-index: 1;
+      @include mixins.standard-flex;
+      flex-direction: column;
+      &--wrap {
+        @include mixins.standard-flex;
+      }
+      &--title {
+        padding: 5px;
+        font-size: 20px;
+      }
+      &--link {
+        padding: 5px;
+        font-size: 18px;
+        text-decoration: none;
+        color: black;
+        &:visited {
+          color: black;
+        }
+      }
+      &--image {
+        width: 300px;
+        border-radius: 50px;
+        box-shadow: 0 0 10px black;
+      }
     }
   }
 }

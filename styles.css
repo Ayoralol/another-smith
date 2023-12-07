@@ -33,12 +33,6 @@
   width: 250px;
   box-shadow: 0 0 10px grey;
 }
-.landing__wave {
-  width: 50vw;
-  height: 200px;
-  border: 2px solid red;
-  margin-bottom: 10vh;
-}
 
 .break {
   flex-basis: 100%;
@@ -65,10 +59,37 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid red;
 }
 .projects__container__cards {
   padding: 40px;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.projects__container__cards--wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.projects__container__cards--title {
+  padding: 5px;
+  font-size: 20px;
+}
+.projects__container__cards--link {
+  padding: 5px;
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+}
+.projects__container__cards--link:visited {
+  color: black;
+}
+.projects__container__cards--image {
+  width: 300px;
+  border-radius: 50px;
+  box-shadow: 0 0 10px black;
 }
 
 .training {
@@ -83,32 +104,42 @@
   text-align: center;
 }
 .training__head {
-  border: 2px solid red;
   font-size: 58px;
   margin-top: 50px;
 }
+.training__head--second {
+  margin-top: 0;
+  font-size: 40px;
+}
 .training__top-container {
-  border: 2px solid red;
-  width: 50vw;
+  width: 70vw;
   display: flex;
   justify-content: center;
   align-items: center;
   align-items: flex-start;
   justify-content: space-around;
-  margin-bottom: 100px;
   height: 200px;
 }
 .training__top {
-  padding-top: 20px;
   width: 25%;
+  height: auto;
+  font-size: 18px;
+  z-index: 6;
+  text-align: center;
+}
+.training__top__para {
   font-family: "Roboto Mono", monospace;
-  font-size: 20px;
+}
+.training__top--icon {
+  font-size: 40px;
+  color: #3e4b62;
 }
 .training__cards {
   padding-top: 20px;
+  font-size: 55px;
+  color: #3e4b62;
 }
 .training__bot-container {
-  border: 2px solid red;
   width: 80vw;
   display: flex;
   justify-content: center;
@@ -120,17 +151,16 @@
   width: 150px;
 }
 .training__other {
-  border: 2px solid red;
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: space-around;
   height: 180px;
   width: 60vw;
-  margin-bottom: 100px;
+  margin-bottom: 80px;
+  z-index: 2;
 }
 .training__other__head {
-  align-self: flex-start;
   font-size: 35px;
   margin-top: 20px;
 }
@@ -142,37 +172,166 @@
 .training__other__container--dad {
   align-self: flex-end;
 }
+.training__other__para {
+  font-size: 18px;
+}
+.training__other__image {
+  width: 80px;
+  margin-top: 10px;
+}
+.training__other__image--dad {
+  width: 120px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px black;
+}
+.training__other__image--tafe {
+  width: 100px;
+  margin-top: -10px;
+}
 
-.cards--html:hover {
-  color: white;
+.cards--html,
+.cards--css,
+.cards--scss,
+.cards--js {
+  white-space: nowrap;
+  width: 100%;
+  color: black;
+  transition: all 0.3s ease-in-out;
+}
+.cards--html--hidden,
+.cards--css--hidden,
+.cards--scss--hidden,
+.cards--js--hidden {
+  white-space: nowrap;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.cards--html--hidden--indent,
+.cards--css--hidden--indent,
+.cards--scss--hidden--indent,
+.cards--js--hidden--indent {
+  padding-left: 15px;
+}
+.cards--html--hidden--indent--double,
+.cards--css--hidden--indent--double,
+.cards--scss--hidden--indent--double,
+.cards--js--hidden--indent--double {
+  padding-left: 30px;
+}
+.cards--html--inline,
+.cards--css--inline,
+.cards--scss--inline,
+.cards--js--inline {
+  display: inline;
+}
+
+.about {
+  height: 100vh;
+  width: 100vw;
+  background: rgb(222, 223, 224);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about__container {
+  width: 60vw;
+  height: 70vh;
+}
+.about__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.about__info__text {
+  width: 400px;
+  font-size: 18px;
+}
+.about__info__text--head {
+  font-weight: 500;
+  text-align: center;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+.about__info__image {
+  width: 220px;
+  border-radius: 150px;
+}
+.about__contact {
+  width: 30vw;
+  margin-top: 15vh;
+  float: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.about__contact__text {
+  padding: 5px;
+  font-size: 20px;
+  z-index: 2;
+}
+.about__contact__text--head {
+  padding-bottom: 15px;
+}
+.about__contact__text--link {
+  padding-left: 10px;
+}
+.about__contact__text--link:visited, .about__contact__text--link:link {
+  text-decoration: none;
+  color: black;
 }
 
 .nav {
+  z-index: 1;
   width: 100vw;
   position: fixed;
 }
 .nav__logo {
-  display: inline;
-  padding: 16px 0 0 6vw;
+  height: 100px;
+  width: 400px;
+  position: fixed;
+  top: 20px;
+  left: 6vw;
+  font-size: 42px;
+  font-weight: 600;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
-.nav__dropdown {
-  float: right;
-  padding: 16px 6vw 0 0;
+.nav__logo__text {
+  display: block;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+  z-index: 0;
+}
+.nav__logo__text--hidden {
+  display: none;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
 }
 .nav__buttons {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  border: 2px solid black;
   width: 30px;
   height: 150px;
-  margin: 30vh 0 40vh 75px;
-  border-radius: 20px;
-  background-color: #faedcd;
+  margin: 40vh 0 40vh 6vw;
 }
 .nav__buttons__btn {
-  margin: 5px;
+  background-color: black;
+  height: 13px;
+  width: 13px;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+.nav__buttons__btn--current {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.opened__nav {
+  right: 0;
+  transition: all 0.3s ease-in-out;
 }
 
 * {
@@ -181,13 +340,23 @@
   font-family: "Rubik", sans-serif;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 body {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
 
-body::-webkit-scrollbar {
-  display: none;
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+.scroll {
+  height: 100vh;
+  scroll-snap-align: start;
 }
 
 .hide {
