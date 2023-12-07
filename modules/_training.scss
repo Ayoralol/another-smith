@@ -1,6 +1,8 @@
 @use "../partials/palette";
 @use "../mixins/mixins";
 
+// add background gradient under top container
+
 .training {
   background: palette.$darker-background;
   width: 100vw;
@@ -10,30 +12,40 @@
   justify-content: space-around;
   text-align: center;
   &__head {
-    border: 2px solid red;
     font-size: 58px;
     margin-top: 50px;
+    &--second {
+      margin-top: 0;
+      font-size: 40px;
+    }
   }
   &__top-container {
-    border: 2px solid red;
-    width: 50vw;
+    width: 70vw;
     @include mixins.standard-flex;
     align-items: flex-start;
     justify-content: space-around;
-    margin-bottom: 100px;
     height: 200px;
   }
   &__top {
-    padding-top: 20px;
     width: 25%;
-    font-family: "Roboto Mono", monospace;
-    font-size: 20px;
+    height: auto;
+    font-size: 18px;
+    z-index: 6;
+    text-align: center;
+    &__para {
+      font-family: "Roboto Mono", monospace;
+    }
+    &--icon {
+      font-size: 40px;
+      color: palette.$accent-text;
+    }
   }
   &__cards {
     padding-top: 20px;
+    font-size: 55px;
+    color: palette.$accent-text;
   }
   &__bot-container {
-    border: 2px solid red;
     width: 80vw;
     @include mixins.standard-flex;
     justify-content: space-around;
@@ -43,14 +55,14 @@
     }
   }
   &__other {
-    border: 2px solid red;
     @include mixins.standard-flex;
     justify-content: space-around;
     height: 180px;
     width: 60vw;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
+    z-index: 2;
     &__head {
-      align-self: flex-start;
+      // align-self: flex-start;
       font-size: 35px;
       margin-top: 20px;
     }
@@ -62,9 +74,45 @@
         align-self: flex-end;
       }
     }
+    &__para {
+      font-size: 18px;
+    }
+    &__image {
+      width: 80px;
+      margin-top: 10px;
+      &--dad {
+        width: 120px;
+        border-radius: 5px;
+        box-shadow: 0 0 5px black;
+      }
+      &--tafe {
+        width: 100px;
+        margin-top: -10px;
+      }
+    }
   }
 }
 
-.cards--html:hover {
-  color: white;
+.cards--html,
+.cards--css,
+.cards--scss,
+.cards--js {
+  white-space: nowrap;
+  width: 100%;
+  color: palette.$main-text;
+  transition: all 0.3s ease-in-out;
+  &--hidden {
+    white-space: nowrap;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    &--indent {
+      padding-left: 15px;
+      &--double {
+        padding-left: 30px;
+      }
+    }
+  }
+  &--inline {
+    display: inline;
+  }
 }

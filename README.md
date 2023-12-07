@@ -49,3 +49,11 @@
 - add in a description of me or personality/hobbies etc.
 - make the links bigger/clearer
 - Have footer of what this was written in etc.
+
+## TO DO
+
+- img imports for EVERY page
+- js implementation for EVERY page
+- scrolling thing
+- text colors
+- bg colors

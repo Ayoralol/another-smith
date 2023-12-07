@@ -1,29 +1,57 @@
 @use "../partials/palette";
+@use "../mixins/mixins";
 
 .nav {
+  z-index: 1;
   width: 100vw;
   position: fixed;
   &__logo {
-    display: inline;
-    padding: 16px 0 0 6vw;
-  }
-  &__dropdown {
-    float: right;
-    padding: 16px 6vw 0 0;
+    //float: left;
+    height: 100px;
+    width: 400px;
+    position: fixed;
+    // padding: 20px 0 0 6vw;
+    top: 20px;
+    left: 6vw;
+    font-size: 42px;
+    font-weight: 600;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    &__text {
+      display: block;
+      opacity: 1;
+      transition: all 0.3s ease-in-out;
+      z-index: 0;
+      &--hidden {
+        display: none;
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
+      }
+    }
   }
   &__buttons {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    border: 2px solid black;
     width: 30px;
     height: 150px;
-    margin: 30vh 0 40vh 75px;
-    border-radius: 20px;
-    background-color: palette.$accent-color;
+    margin: 40vh 0 40vh 6vw;
     &__btn {
-      margin: 5px;
+      background-color: black; // make into a radial gradient
+      height: 13px;
+      width: 13px;
+      border-radius: 5px;
+      border: 2px solid black;
+      &--current {
+        background-color: rgba(0, 0, 0, 0);
+      }
     }
   }
+}
+
+.opened__nav {
+  right: 0;
+  transition: all 0.3s ease-in-out;
 }
