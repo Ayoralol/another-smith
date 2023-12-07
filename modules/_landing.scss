@@ -8,27 +8,22 @@
   background: palette.$main-background-gradient;
   @include mixins.standard-flex;
   &__text {
-    // border: 2px solid red;
     margin-left: 5vw;
     margin-bottom: 20vh;
     &__head {
-      // border: 2px solid red;
       font-size: 52px;
     }
     &__title {
-      // border: 2px solid red;
       padding: 20px 0 15px 0;
       font-size: 35px;
       font-weight: 500;
       font-style: italic;
     }
     &__text {
-      // border: 2px solid red;
       font-size: 22px;
     }
   }
   &__image {
-    // border: 2px solid red;
     margin-left: 15vw;
     margin-bottom: 20vh;
     &--mods {

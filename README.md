@@ -1,5 +1,7 @@
-# another-smith
+# Project Portfolio
 
-## MAKE SURE TO FILL THIS OUT
+This is my portfolio that I have created during the nology course! This will be continuously updated as I learn new things and create new projects!
 
-## implementing breakpoints 992 and 576
+## This Project
+
+The purpose of this portfolio is to test my knowledge of HTML, CSS, SCSS, Javascript, and Git. It will also be a viewpoint for employers and coworkers to see what I can do.

@@ -22,17 +22,14 @@
   &__top-container {
     width: 50vw;
     display: flex;
-    // border: 2px solid red;
   }
   &__top {
     width: 25%;
     font-size: 18px;
     z-index: 6;
     text-align: center;
-    // border: 2px solid red;
     &__para {
       font-family: "Roboto Mono", monospace;
-      // border: 2px solid red;
     }
     &--icon {
       font-size: 40px;
@@ -43,17 +40,14 @@
     padding-top: 20px;
     font-size: 55px;
     color: palette.$accent-text;
-    // border: 2px solid red;
   }
   &__bot-container {
     width: 80vw;
     @include mixins.standard-flex;
     justify-content: space-around;
     margin-bottom: 50px;
-    // border: 2px solid red;
   }
   &__other {
-    // border: 2px solid red;
     @include mixins.standard-flex;
     justify-content: space-around;
     width: 60vw;
@@ -64,7 +58,6 @@
       margin-top: 20px;
     }
     &__container {
-      // border: 2px solid red;
       padding: 0 20px;
       align-self: flex-start;
       margin-top: 20px;
@@ -136,10 +129,8 @@
     }
     &__cards {
       font-size: 30px;
-      // border: 2px solid red;
     }
     &__other {
-      // border: 2px solid red;
       margin-bottom: 20px;
       &__head {
         font-size: 24px;
@@ -185,8 +176,6 @@
       padding-top: 0;
     }
     &__other {
-      // border: 2px solid red;
-      // margin-bottom: 20px;
       &__head {
         font-size: 14px;
       }
@@ -285,7 +274,6 @@
       font-size: 28px;
     }
     &__other {
-      // border: 2px solid red;
       justify-content: center;
       &__container {
         width: 33.33%;

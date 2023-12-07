@@ -9,10 +9,8 @@
   &__container {
     width: 60vw;
     height: 70vh;
-    // border: 2px solid red;
   }
   &__info {
-    // border: 2px solid red;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -32,7 +30,6 @@
     }
   }
   &__contact {
-    // border: 2px solid red;
     width: 30vw;
     margin-top: 15vh;
     float: right;
@@ -41,7 +38,6 @@
     align-items: flex-start;
     justify-content: center;
     &__text {
-      // border: 2px solid red;
       padding: 5px;
       font-size: 20px;
       z-index: 2;
@@ -87,7 +83,6 @@
   .about {
     align-items: center;
     &__container {
-      // border: 2px solid red;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -95,13 +90,11 @@
     }
     &__info {
       &__text {
-        // border: 2px solid red;
         font-size: 16px;
         margin-bottom: 10px;
         width: 350px;
       }
       &__image {
-        // border: 2px solid red;
         margin-bottom: 10px;
         width: 150px;
       }
@@ -110,7 +103,6 @@
       margin-left: -70px;
       margin-top: 20px;
       float: none;
-      // border: 2px solid red;
     }
   }
 }
@@ -119,11 +111,9 @@
   .about {
     &__info {
       &__text {
-        // border: 2px solid red;
         font-size: 12px;
       }
       &__image {
-        // border: 2px solid red;
         margin-bottom: 0;
         width: 100px;
       }
@@ -131,7 +121,6 @@
     &__contact {
       margin-left: -50px;
       margin-top: 20px;
-      // border: 2px solid red;
       &__text {
         font-size: 14px;
       }
