@@ -3,3 +3,39 @@
   justify-content: center;
   align-items: center;
 }
+
+@mixin laptop-L {
+  @media only screen and (max-width: 1280px) and (orientation: landscape) {
+    @content;
+  }
+}
+
+@mixin tablet-L {
+  @media only screen and (max-width: 992px) and (orientation: landscape) {
+    @content;
+  }
+}
+
+@mixin small-tablet-L {
+  @media only screen and (max-width: 768px) and (orientation: landscape) {
+    @content;
+  }
+}
+
+@mixin tablet-P {
+  @media only screen and (max-width: 992px) and (orientation: portrait) {
+    @content;
+  }
+}
+
+@mixin small-tablet-P {
+  @media only screen and (max-width: 768px) and (orientation: portrait) {
+    @content;
+  }
+}
+
+@mixin phone-P {
+  @media only screen and (max-width: 576px) and (orientation: portrait) {
+    @content;
+  }
+}
