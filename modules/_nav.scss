@@ -3,14 +3,12 @@
 
 .nav {
   z-index: 1;
-  width: 100vw;
+  box-sizing: border-box;
+  overflow: hidden;
   position: fixed;
   &__logo {
-    //float: left;
     height: 100px;
-    width: 400px;
     position: fixed;
-    // padding: 20px 0 0 6vw;
     top: 20px;
     left: 6vw;
     font-size: 42px;
@@ -51,7 +49,36 @@
   }
 }
 
-.opened__nav {
-  right: 0;
-  transition: all 0.3s ease-in-out;
+@include mixins.tablet-L {
+  .nav {
+    &__logo {
+      height: 80px;
+      font-size: 30px;
+      top: 15px;
+    }
+    &__buttons {
+      display: none;
+    }
+  }
+}
+
+@include mixins.small-tablet-L {
+  .nav {
+    &__logo {
+      font-size: 20px;
+      top: 0;
+    }
+  }
+}
+
+@include mixins.small-tablet-P {
+  .nav {
+    &__logo {
+      font-size: 20px;
+      top: 0;
+    }
+    &__buttons {
+      display: none;
+    }
+  }
 }

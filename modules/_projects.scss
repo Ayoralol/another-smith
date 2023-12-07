@@ -13,12 +13,9 @@
     margin-bottom: 50px;
   }
   &__container {
-    width: 1000px;
-    height: 500px;
+    width: 50vw;
     @include mixins.standard-flex;
-    // border: 2px solid red;
     &__cards {
-      // border: 2px solid red;
       padding: 40px;
       z-index: 1;
       @include mixins.standard-flex;
@@ -43,6 +40,112 @@
         width: 300px;
         border-radius: 50px;
         box-shadow: 0 0 10px black;
+      }
+    }
+  }
+}
+
+@include mixins.laptop-L {
+  .projects {
+    width: 100%;
+    height: 100%;
+    &__head {
+      font-size: 44px;
+      margin-bottom: 25px;
+    }
+    &__container {
+      &__cards {
+        &--image {
+          width: 175px;
+        }
+      }
+    }
+  }
+}
+
+@include mixins.tablet-L {
+  .projects {
+    justify-content: flex-end;
+    &__head {
+      font-size: 40px;
+      margin-bottom: 0;
+    }
+    &__container {
+      &__cards {
+        padding: 0;
+        padding-top: 20px;
+        margin-bottom: 40px;
+        &--image {
+          width: 125px;
+        }
+      }
+    }
+  }
+}
+
+@include mixins.small-tablet-L {
+  .projects {
+    &__head {
+      font-size: 30px;
+    }
+    &__container {
+      &__cards {
+        padding-top: 10px;
+        margin-bottom: 20px;
+        &--image {
+          border-radius: 20px;
+          width: 100px;
+        }
+      }
+    }
+  }
+}
+
+@include mixins.tablet-P {
+  .projects {
+    width: 100lvw;
+    height: 100lvh;
+    &__head {
+      font-size: 44px;
+    }
+  }
+}
+
+@include mixins.small-tablet-P {
+  .projects {
+    &__head {
+      font-size: 40px;
+    }
+    &__container {
+      &__cards {
+        padding: 0;
+        &--image {
+          border-radius: 20px;
+          width: 180px;
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+}
+
+@include mixins.phone-P {
+  .projects {
+    &__head {
+      font-size: 25px;
+    }
+    &__container {
+      &__cards {
+        &--image {
+          width: 130px;
+        }
+        &--title {
+          text-align: center;
+          font-size: 17px;
+        }
+        &--link {
+          font-size: 16px;
+        }
       }
     }
   }
