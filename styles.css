@@ -780,4 +780,5 @@ html {
 .scroll {
   height: 100vh;
   scroll-snap-align: start;
+  scroll-snap-type: y mandatory;
 }

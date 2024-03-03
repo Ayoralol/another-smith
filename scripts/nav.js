@@ -4,6 +4,13 @@ const hiddenText = document.querySelector(".nav__logo__text--hidden");
 const shownText = document.querySelector(".nav__logo__text");
 const delay = 300;
 
+function toggleHide(element) {
+  shownText.style.display = "none";
+  if (element.style.display === "none") {
+    element.style.display = "block";
+  }
+}
+
 function extendName(display) {
   if (display === 1) {
     shownText.style.opacity = 0;
