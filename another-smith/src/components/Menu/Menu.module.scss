@@ -1,0 +1,9 @@
+.menu {
+  transition: max-height 0.4s ease-in-out;
+  overflow: hidden;
+  max-height: 0;
+}
+
+.open {
+  max-height: 300px; /* Adjust this value to fit your content */
+}
