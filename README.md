@@ -6,4 +6,4 @@ This is my portfolio that I have created during the nology course! This will be 
 
 The purpose of this portfolio is to test my knowledge of HTML, CSS, SCSS, Javascript, and Git. It will also be a viewpoint for employers and coworkers to see what I can do.
 
-[Launch my Portfolio!](https://ayoralol.github.io/another-smith/)
+[Launch my Portfolio!](https://anothersmith.netlify.app/)
