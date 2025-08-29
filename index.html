@@ -163,11 +163,20 @@
             <p class="training__top__para cards--js--hidden cards--js--hidden--indent">} else text.style.opacity = 0;</p>
             <p class="training__top__para cards--js--hidden cards--js--hidden">}</p>
         </div>
+        <div class="training__top" onmouseover="showHiddenGo(1)" onmouseout="showHiddenGo(0)">
+          <div  class="training__top--icon">
+            <i class="fa-brands fa-golang"></i>
+          </div>
+          <div class="cards--go">
+            <p class="cards--go--hidden cards--go--inline">// </p>
+            <p class="training__top__para cards--go cards--go--inline">Go</p>
+          </div>
+          <p class="training__top__para cards--go--hidden">func EmitMetric(name string) {</p>
+            <p class="training__top__para cards--go--hidden cards--go--hidden--indent">fmt.Printf("%s_success", name)</p>
+            <p class="training__top__para cards--go--hidden">}</p>
+        </div>
       </div>
       <div class="training__bot-container">
-        <div class="training__cards training__cards--git">
-          <i class="fa-brands fa-golang"></i>
-        </div>
         <div class="training__cards training__cards--git">
           <i class="fa-brands fa-python"></i>
         </div>
