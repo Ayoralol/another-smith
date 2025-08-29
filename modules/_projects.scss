@@ -37,7 +37,8 @@
         }
       }
       &--image {
-        width: 300px;
+        max-width: 300px;
+        max-height: 370px;
         border-radius: 50px;
         box-shadow: 0 0 10px black;
       }
