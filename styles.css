@@ -355,7 +355,8 @@
 .cards--html,
 .cards--css,
 .cards--scss,
-.cards--js {
+.cards--js,
+.cards--go {
   white-space: nowrap;
   width: 100%;
   color: black;
@@ -364,7 +365,8 @@
 .cards--html--hidden,
 .cards--css--hidden,
 .cards--scss--hidden,
-.cards--js--hidden {
+.cards--js--hidden,
+.cards--go--hidden {
   white-space: nowrap;
   opacity: 0;
   transition: all 0.3s ease-in-out;
@@ -372,7 +374,8 @@
 .cards--html--hidden--indent,
 .cards--css--hidden--indent,
 .cards--scss--hidden--indent,
-.cards--js--hidden--indent {
+.cards--js--hidden--indent,
+.cards--go--hidden--indent {
   padding-left: 15px;
 }
 .cards--html--hidden--indent--double,
@@ -384,7 +387,8 @@
 .cards--html--inline,
 .cards--css--inline,
 .cards--scss--inline,
-.cards--js--inline {
+.cards--js--inline,
+.cards--go--inline {
   display: inline;
 }
 

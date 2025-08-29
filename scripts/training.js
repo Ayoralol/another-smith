@@ -9,6 +9,9 @@ const scssCard = document.querySelectorAll(".cards--scss");
 const jsText = document.querySelectorAll(".cards--js--hidden");
 const jsCard = document.querySelectorAll(".cards--js");
 const jsInline = document.querySelectorAll(".cards--js--inline");
+const goText = document.querySelectorAll(".cards--go--hidden");
+const goCard = document.querySelectorAll(".cards--go");
+const goInline = document.querySelectorAll(".cards--go--inline");
 
 // functions
 // main show/hide function
@@ -67,4 +70,17 @@ function showHiddenJs(display) {
     }
   }
   showHidden(display, jsText, jsCard);
+}
+
+function showHiddenGo(display) {
+  if (display === 1) {
+    for (let i = 0; i < goInline.length; i++) {
+      goInline[i].style.color = "#076808";
+    }
+  } else {
+    for (let i = 0; i < goInline.length; i++) {
+      goInline[i].style.color = "#000000";
+    }
+  }
+  showHidden(display, goText, goCard);
 }
